@@ -1,0 +1,75 @@
+#app-container {
+    display: grid;
+    grid-template-rows: 5rem, 1fr;
+    gap: 4rem;
+    padding: 3rem ;
+    background-color: #242424;
+    color: rgba(219, 218, 218, 0.87);
+    div:first-child {
+        display: flex;
+        place-content: center;
+        gap: 1.5rem;
+
+        input {
+            font-size: 1.25rem;
+            padding: 0 1rem;
+            width: 20rem;
+            border: none;
+            outline: none;
+            border-radius: 0.35em;
+            background-color:  rgba(219, 218, 218, 0.87);
+        }
+
+        button {
+            padding: 0.5em;
+            border-radius: 0.5em;
+            border: 1px solid transparent;
+            background-color: #131212;
+            color: inherit;
+            cursor: pointer;
+            transition: border-color 0.25s;
+            font-size: 1.25rem;
+        }
+
+        button:hover {
+            color: #2bc59f;
+            border: 1px solid #2bc59f;
+        }        
+    }
+    div:nth-child(2) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 2rem;
+        figure.card{
+            display: grid;
+            justify-items: center;
+            background-color: rgb(42, 46, 46);
+            padding: 1rem 0 1.5rem;
+            gap: 1.5rem;
+            width: 22rem;
+            border: 1px solid #131212;
+            >figure{
+                height: 16rem;
+                width: 100%;
+                background-color: rgb(33, 36, 36);
+                display: grid;
+                place-content: center;
+            }
+            figure>image{
+                width: 100%;
+            }
+            .caption{
+                display: flex;
+                gap: 0.5rem;
+            }
+            .caption>span{
+                display: flex;
+                gap: 0.5rem;
+            }
+            h4  {
+                color: #2bc59f;
+            }
+        }
+    }
+}
